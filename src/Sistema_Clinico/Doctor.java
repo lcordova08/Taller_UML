@@ -3,30 +3,27 @@ package Sistema_Clinico;
 import java.util.Date;
 
 public class Doctor extends Persona {
-	protected Boolean disponibilidad;	
+	protected int regDoctor;
+	protected String especialidad;
 	
-Doctor(Boolean disponibilidad,String usuario,String clave,String nombre,String apellido,String cedula,String direccion,Date fechaNac){
-	
+Doctor(int regDoctor,String especialidad,String usuario,String clave,String nombre,String apellido,String cedula,String direccion,Date fechaNac){
 	super( usuario, clave, nombre,apellido,cedula, direccion, fechaNac);
-	this.disponibilidad = disponibilidad;
-}
-
-public void Recetar() {
+	this.regDoctor = regDoctor;
+	this.especialidad = especialidad;
+	}
 	
-}
-
-public void Correo(usuario ) {
-	
-}
-public void RegistraSecretaria(secretaria) {
-	
-}
-public void EliminarSecretaria(secretaria) {
-	
-}
-public void PlanNutricional(paciente) {
-
-}
+	public void recetar() {
+		
+	}
+	public void agregarPlanNut() {
+		
+	}
+	public void imprimirReceta() {
+		
+	}
+	public void registrarSecretaria() {
+		
+	}
 
 }
 
