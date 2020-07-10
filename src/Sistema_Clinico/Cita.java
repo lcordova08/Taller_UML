@@ -2,7 +2,8 @@ package Sistema_Clinico;
 
 import java.util.Date;
 
-public class Cita  {
+
+public class Cita {
 	protected Date fecha;
 	protected boolean pagada;
 	protected String registradoPor;
@@ -12,7 +13,19 @@ public class Cita  {
 	//Variable de Asociacion (Una cita tiene un doctor)
 	protected Doctor doctor;
 	
-	public void realizarPago(Pago p) { //Poner en el argumento Pago p
+	public Cita(Date fecha, boolean pagada, String registradoPor, Secretaria secretaria, Doctor doctor) {
+		super();
+		this.fecha = fecha;
+		this.pagada = pagada;
+		this.registradoPor = registradoPor;
+		this.secretaria = secretaria;
+		this.doctor = doctor;
 		
 	}
+
+	public void realizarPago(Pago p) {
+		
+	}
+
+	
 }

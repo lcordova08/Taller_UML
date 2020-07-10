@@ -13,6 +13,8 @@ public class Doctor extends Persona {
 	protected Secretaria secretaria;
 	//Variable de Agregacion (El docotor puede tener muchas Areas Medicas)
 	protected ArrayList<AreaMedica> areaMedica;	
+	//Variable de Asociacion (Un doctor puede proporcionar varias recetas)
+	protected ArrayList<Receta>recetas;
 	
 Doctor(AreaMedica especialidadDoctor,int regDoctor,String especialidad,String usuario,String clave,String nombre,String apellido,String cedula,String direccion,Date fechaNac){
 	super( usuario, clave, nombre,apellido,cedula, direccion, fechaNac);

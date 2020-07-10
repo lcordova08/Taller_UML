@@ -10,6 +10,8 @@ public class Persona {
 	protected String cedula;
 	protected String direccion;
 	protected Date fechaNac;
+	//Variable de Asociacion (Solo puede haber 1 administrador)
+	protected Administrador admin;
 	
 	Persona(String usuario,String clave,String nombre,String apellido,String cedula,String direccion,Date fechaNac){
 		this.usuario = usuario;
